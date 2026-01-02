@@ -1,0 +1,104 @@
+HTTP/1.1 200 OK
+Cache-Control: private,no-cache, must-revalidate Pragma: no-cache Expires: 0
+Content-Type: application/json; charset=utf-8
+Server: 
+Access-Control-Allow-Origin: *
+Set-Cookie: rxid=a6702516-cf51-414c-8f60-b4568d1fd0a1; path=/
+X-Powered-By: ASP.NET
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Content-Security-Policy: script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.matomo.cloud https://stat.matomo.cloud 
+X-Frame-Options: SAMEORIGIN
+Referrer-Policy: same-origin
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Date: Sun, 02 Nov 2025 14:53:41 GMT
+Content-Length: 2448
+
+{
+  "version": "2.0",
+  "class": "dataset",
+  "label": "Kuluttajahintaindeksi (2005=100) muuttujina Kuukausi, Hyödyke ja Tiedot",
+  "source": "Tilastokeskus, kuluttajahintaindeksi",
+  "updated": "2025-10-14T05:00:00Z",
+  "note": [
+    "Tilaston dokumentaatio: https://stat.fi/tilasto/dokumentaatio/khi",
+    ". tieto on puuttuva (missing value)"
+  ],
+
+  "role": {
+    "time": ["Kuukausi"],
+    "metric": ["Tiedot"]
+  },
+
+  "id": ["Kuukausi", "Hyödyke", "Tiedot"],
+  "size": [12, 1, 1],
+
+  "dimension": {
+    "Kuukausi": {
+      "label": "Kuukausi",
+      "category": {
+        "index": {
+          "2024M01": 0, "2024M02": 1, "2024M03": 2, "2024M04": 3,
+          "2024M05": 4, "2024M06": 5, "2024M07": 6, "2024M08": 7,
+          "2024M09": 8, "2024M10": 9, "2024M11": 10, "2024M12": 11
+        },
+        "label": {
+          "2024M01": "2024M01", "2024M02": "2024M02", "2024M03": "2024M03",
+          "2024M04": "2024M04", "2024M05": "2024M05", "2024M06": "2024M06",
+          "2024M07": "2024M07", "2024M08": "2024M08", "2024M09": "2024M09",
+          "2024M10": "2024M10", "2024M11": "2024M11", "2024M12": "2024M12"
+        }
+      }
+    },
+
+    "Hyödyke": {
+      "label": "Hyödyke",
+      "category": {
+        "index": { "0": 0 },
+        "label": { "0": "0 KOKONAISINDEKSI" }
+      }
+    },
+
+    "Tiedot": {
+      "label": "Tiedot",
+      "category": {
+        "index": { "pisteluku": 0 },
+        "label": { "pisteluku": "Pisteluku" },
+        "note": {
+          "pisteluku": [
+            "Pisteluku on hintaindekseissä käytetty muutossuure. "
+            "Se kertoo hinnan muutoksen suhteessa perusajankohtaan. "
+            "Esimerkiksi pisteluku 105,3 tarkoittaa 5,3 % hinnannousua perusajankohdasta."
+          ]
+        },
+        "unit": {
+          "pisteluku": {
+            "base": "Indeksipisteluku",
+            "decimals": 2
+          }
+        }
+      }
+    }
+  },
+
+  "extension": {
+    "px": {
+      "tableid": "statfin_khi_pxt_11xf",
+      "decimals": 2,
+      "official-statistics": true,
+      "language": "fi",
+      "contents": "Kuluttajahintaindeksi (2005=100)",
+      "description": "11xf -- Kuluttajahintaindeksi (2005=100), kuukausitiedot, 2005M01–2025M09"
+    },
+    "contact": [
+      {
+        "raw": "Tilaston kotisivu: https://stat.fi/tilasto/khi"
+      }
+    ]
+  },
+
+  "value": [
+    145.45, 146.22, 146.07, 146.10, 145.93, 145.91,
+    146.22, 145.50, 145.95, 146.72, 146.20, 146.10
+  ]
+}
